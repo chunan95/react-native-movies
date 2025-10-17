@@ -1,0 +1,13 @@
+https://reactnative.dev/
+
+#To run server:
+npx expo start
+
+#To start a new React Native project, you can use the following command:
+npx create-expo-app@latest
+
+#Choose the platform to develop for (IOS, Android, or Web) and follow the instructions provided in the Expo documentation:
+https://docs.expo.dev/get-started/set-up-your-environment/
+
+#To reset the directory to blank:
+npm run reset-project

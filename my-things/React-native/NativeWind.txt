@@ -1,0 +1,10 @@
+#Tailwind CSS for React Native
+https://www.nativewind.dev/
+https://www.nativewind.dev/docs/getting-started/installation
+
+#To install NativeWind in your React Native project, you can use the following command:
+npm install nativewind tailwindcss react-native-reanimated react-native-svg react-native-safe-area-context
+npx tailwindcss init
+
+
+

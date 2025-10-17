@@ -1,0 +1,40 @@
+# Git Commands Reference
+
+## Basic Setup & Initialization
+git init                    # Initialize a new Git repository in the current directory
+git clone <repository_url>  # Clone an existing repository from a URL
+
+## Staging & Committing Changes
+git status                  # Show the working tree status
+git add <file_name>         # Add a specific file to the staging area
+git add .                   # Add all changes in the current directory to the staging area
+git add -A                  # Add all new and changed files in the entire repository to the staging area
+git commit -m "Commit message" # Record staged changes to the repository with a message
+
+## Branching & Merging
+git branch                  # List all local branches
+git branch <branch_name>    # Create a new branch
+git checkout <branch_name>  # Switch to a different branch
+git checkout -              # Switch to the previously checked out branch
+git merge <branch_name>     # Merge a specified branch into the current branch
+git branch -d <branch_name> # Delete a local branch (only if merged)
+git branch -D <branch_name> # Force delete a local branch (even if not merged)
+
+## Remote Repositories
+git remote -v               # Show the URL of the remote repository
+git push origin <branch_name> # Push local branch changes to the remote repository
+git push -u origin <branch_name> # Push and set upstream for the current branch
+git pull origin <branch_name> # Fetch and merge changes from the remote repository
+
+## Viewing History & Undoing Changes
+git log                     # Show commit history
+git log --oneline           # Show concise commit history
+git reset <file_name>       # Unstage a file (remove from staging area)
+git reset --hard <commit_hash> # Discard all changes and revert to a specific commit
+git revert <commit_hash>    # Create a new commit that undoes a previous commit
+git diff                    # Show changes between the working directory and staging area
+git diff --staged           # Show changes between the staging area and the last commit
+
+## Configuration
+git config --global user.name "Your Name"    # Set global user name
+git config --global user.email "your@email.com" # Set global user email
